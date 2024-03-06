@@ -10,7 +10,10 @@ body {
 	
 }
 
+/* Grid */
+
 .container {
+	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	width: 100%;
@@ -18,70 +21,119 @@ body {
 	
 }
 
-.container < div {
-		padding: 15px;
-		
-	
-}
-
-nav ul li {
-	display: inline;
-	color: white;
-	padding: 15px;
-}
-
-nav {
-	background-color: rgba(0,0,0,.7);
-	padding: 15px;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	
-}
-
-
-
-
-
-.header {
+.headImg {
 	grid-column: span 6;
-	padding: 0px;
+	padding:0px;
 	margin: 0px;
+	height: 550px;
 }
+
 
 .body {
 	grid-column: span 6;
-
+	padding: 20px;
+	padding-bottom: 0px;
+	background-color: rgba(0,192,242,.9)
 }
 
-.body > div {
-	padding: 15px;
-	
+.container < div {
+		padding: 30px;
+		
 }
-
-
-.header img {
-	width: 100%;
-	height: 500px;
-	object-fit: cover;
-	
-
-
-}
-
-.headImg {
-	padding: 0px;	
-	
-}
-
-
-
 
 .container > div > div {
 		border: 1px solid black;
+}
+
+
+/* Header */
+
+
+.headImg img {
+	width: 100%;
+	height: 550px;
+	
+	
 	
 }
+
+
+
+
+/* Body */
+
+.body > div {
+	background-color: white;
+	padding: 15px;
+}
+
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  
+}
+
+
+h2 {
+	
+	 font-family: "Exo 2", sans-serif;
+	 font-weight: 400;
+	 font-style: normal;
+}
+
+p {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 30px;
+	
+}
+
+.sa img {
+	padding: 10px;
+	float: right;
+}
+
+
+
+/* Other Options */
+
+
+.other {
+	text-align: center;
+	
+}
+
+.card {
+	height: 400px;
+	width: 300px;
+	border: 5px solid lightblue;
+	grid-column: span 2;
+	display: inline-block;
+	margin: 10px;
+	
+	
+}
+
+.box {
+	padding: 10px;
+
+}
+
+.card h4 b{
+	
+	font-family: "Playfair Display", serif;
+	
+}
+
+
+
+
+/* Footer */
+
 
 footer {
 	display: grid;
@@ -93,10 +145,14 @@ footer {
 	
 	
 }
+
 footer > div {
-	
 	padding: 5px;
 	
+}
+
+.footerLinks > ul {
+	list-style: none;
 }
 
 footer #transport {
@@ -112,43 +168,6 @@ footer #contact {
 }
 
 
-
-.footerLinks > ul {
-	list-style: none;
-}
-
-.sa img {
-	
-	object-fit: cover;
-	
-
-}
-
-
-h1 {
-  font-family: "Exo 2" sans-serif;
-  font-weight: 500;
-  font-style: normal;
-	
-}
-
-h2 {
-	
-	  font-family: "Exo 2", sans-serif;
-	  font-weight: 400;
-	  font-style: normal;
-
-	
-	
-}
-
-p {
-	font-family: "Quicksand", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	
-}
-
 footer li  {
 	font-family: "Quicksand", sans-serif;
 	font-weight: 400;
@@ -163,6 +182,8 @@ footer li a {
 	
 }
 
+
+
 footer .social ul li{
 	display: inline;
 	letter-spacing: 10px;
@@ -174,7 +195,7 @@ footer .social ul li{
 
 
 footer .social ul li a:hover {
-	color: yellow;
+	color: lightblue;
 }
 
 
@@ -183,14 +204,17 @@ footer .social ul li a:hover {
 
 footer .social p {
 	font-size: 20px;
+	line-height: 35px;
 	
 }
 
 footer p {
 	font-family: "Exo 2", sans-serif;
 	font-weight: 500;
+	font-size: 20px;
 	letter-spacing: 3px;
 	font-style: normal;
+	padding-bottom: 10px;
 	
 }
 
@@ -200,16 +224,78 @@ span {
 	border-top: 1px solid white;
 	display: inline-block;
 	width: 100%;
+	padding-top: 20px;
 	
 }
 
 
-.sa  {
-	
-	margin: auto;
-	
-	
+
+
+
+.slideshow-container {
+	text-align: center;
 	
 }
 
 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+.prev a {
+	font-size: 20px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
