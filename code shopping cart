@@ -1,0 +1,11 @@
+<!-- Html icon shopping icon-->
+
+<a href="NightLife.html" class="shopping-cart-icon"><img src="fotor-20240317181013.png" alt="Shopping Cart"></a>
+
+/*Css icon shopping cart*/
+
+.shopping-cart-icon img {
+  width: 20px;
+  height: auto;
+  vertical-align: right;
+}
