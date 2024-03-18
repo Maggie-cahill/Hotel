@@ -37,7 +37,7 @@
 	grid-column: span 6;
 	padding: 20px;
 	padding-bottom: 0px;
-	background: linear-gradient(90deg, #b00000, #b50000, #ea3939, #ff9f04, #f2e121, #bc0000);
+	background: linear-gradient(90deg, #29b000, #007e2c, #62ea39, #f2e121, #009316);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	
