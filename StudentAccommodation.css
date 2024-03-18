@@ -17,6 +17,13 @@
 	
 }
 
+.header img {
+	height: 100px;
+	width: 120px;
+	padding: 0;
+	border: 3px solid white;
+	border-radius: 50%;
+}
 .headImg {
 	
 	grid-column: span 7;
@@ -111,9 +118,18 @@ p {
 }
 
 .sa img {
-	height: 30vw;
+	height: 27vw;
 	padding: 10px;
 	float: right;
+}
+
+.intro a {
+	text-decoration: none;
+	color: black;
+}
+
+.intro a:hover {
+	text-decoration: underline;
 }
 
 
@@ -144,7 +160,7 @@ footer > div {
 	
 }
 
-.footerLinks > ul {
+.footerLinks  ul {
 	list-style: none;
 	
 }
@@ -225,7 +241,7 @@ footer p {
 	
 }
 
-span {
+footer span {
 	margin-top: 10px;
 	grid-column: span 3;
 	border-top: 1px solid white;
