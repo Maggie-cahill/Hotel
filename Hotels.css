@@ -1,3 +1,4 @@
+  @import url("https://fonts.googleapis.com/css2?familly=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ body{
 	background: linear-gradient(90deg, #D7FF0D, #92FF0D, #4DFF0D, #0DFF82, #0DFFDB);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	font-family:"Times New Roman", sans-serif;
+	font-family:"Poppins", sans-serif;
 	
 
 }
